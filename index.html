@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Yang Sun</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Home page -->
+        <div id="home">
+            <header id="background">
+                <h1 class="header-title animation-pop-in">
+                    Hi I'm <span class="name animation-pop-in">Yang Sun</span>.
+                </h1>
+                <p class="header-subtitle animation-pop-in">
+                    Full-Stack Web Developer
+                </p>
+                <a href="#about" class="header-button animation-pop-in">Learn More</a>
+            </header>
+        </div>
+
+        <nav>
+            <div>
+                <h4><a href="#home" class="logo">Yang Sun</a></h4>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./Resume (Yang Sun).pdf" target="_blank">Resume</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!-- About page -->
+        <div id="about">
+            <h1>About</h1>
+            <div class="content">
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates laboriosam consectetur nisi, quod quia veritatis atque unde recusandae autem ab dolores blanditiis quos, quis eligendi ex accusamus nostrum totam aliquid quasi tempore? Mollitia dolorum ducimus doloremque corrupti! Velit ut recusandae cumque vero reiciendis pariatur laboriosam iusto, delectus odio molestiae.</p>
+                <img src="./me.png" alt="me" class="about-img">
+            </div>
+        </div>
+
+        <!-- Projects page -->
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="content">
+                <div class="project1">
+                    <!-- <div class="box1"></div> -->
+                    <div class="card1">
+                        <img src="./django_home.png" alt="" class="box1">
+                        <div class="card1_text">
+                            <h4>Django</h4>
+                            <h4>HTML5</h4>
+                            <h4>CSS</h4>
+                            <!-- <button class="btn btn1">See Code</button> -->
+                            <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
+                        </div>
+                    </div>
+                    <div class="text1">
+                        <div class="text">
+                            A back-end blog implemented with Django, which allows the user to:
+                            <!-- <br><br/> -->
+                            <ol>
+                                <li>(1) create/read/update/delete blogs</li>
+                                <li>(2) create/read/update/delete user profile</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project2">
+                    <!-- <div class="box2"></div> -->
+                    <div class="card2">
+                        <img src="./web2py_home.png" alt="" class="box2">
+                        <div class="card2_text">
+                            <h4>Web2py</h4>
+                            <h4>Vue.js</h4>
+                            <h4>HTML5</h4>
+                            <!-- <button class="btn btn2">See Code</button> -->
+                            <a href="https://github.com/ysun62/Shopping-Website" target="_blank" class="btn btn2">See Code</a>
+                        </div>
+                    </div>
+                    <div class="text2">
+                        <div class="text">
+                            A full-stack online shopping website built with Web2py and Vue.js, which allows the user to:
+                            <ol>
+                                <li>(1) create/buy products</li>
+                                <li>(2) read/leave reviews and ratings</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact">
+            <h1>Contact</h1>
+            <div class="contact-wrapper">
+                <div class="background bg1">
+                    <div class="contact-method github">
+                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/ysun62" target="_blank">github.com/ysun62</a>
+                    </div>
+                </div>
+                <div class="background bg2">
+                    <div class="contact-method linkedin">
+                        <i class="fa fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/yanglsun/" target="_blank">linkedin.com/in/yanglsun/</a>
+                    </div>
+                </div>
+                <div class="background bg3">
+                    <div class="contact-method email">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:ysun62@ucsc.edu">ysun62@ucsc.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
