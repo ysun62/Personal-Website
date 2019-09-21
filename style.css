@@ -1045,6 +1045,7 @@ ul li a:hover {
     ul li {
         display: block;
         text-align: center;
+        padding: 18px;
     }
     .fixed-nav ul {
         position: fixed;
@@ -1096,6 +1097,9 @@ ul li a:hover {
 }
 
 @media (max-width: 666px) and (orientation: landscape) {
+    ul li {
+        padding: 12px;
+    }
     #about h1 {
         font-size: 26px;
     }
@@ -1258,8 +1262,7 @@ ul li a:hover {
         border-bottom: none;
     }
     ul {
-        color: black;
-        background-color: black;
+        background-color: #31302E;
         width: 100%;
         display: none;
         z-index: 1;
