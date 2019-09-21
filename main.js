@@ -9,6 +9,9 @@ const contact = document.querySelector('#contact');
 const navItems = document.querySelectorAll('ul li');
 const whole_page = document.querySelector('.container');
 
+const abouth1 = document.querySelector('#about h1');
+const abouth1Top = abouth1.offsetTop;
+
 //Nav Animation
 const navAnimation = () => {
     const burger = document.querySelector('.burger');
@@ -19,13 +22,12 @@ const navAnimation = () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
 
-
         //Animate NavItems
         navItems.forEach((item, index) => {
             if(item.style.animation) {
                 item.style.animation = '';
             } else {
-                item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`
+                item.style.animation = `navLinkFade 0.5s ease forwards ${index / 8}s`
             }
         });
 
@@ -59,38 +61,42 @@ const nav = document.querySelector('nav');
 const navTop = nav.offsetTop;
 
 const handleScroll = () => {
+    console.log(window.scrollY, navTop);
     if(window.scrollY >= navTop) {
         document.body.style.paddingTop = nav.offsetHeight + 'px';
         nav.classList.add('fixed-nav');
+        console.log('fixed');
     } else {
         document.body.style.paddingTop = 0;
         nav.classList.remove('fixed-nav');
     }
 }
 
+
+
 const scrollAnimation = () => {
-    console.log(window.scrollY);
-    if(window.scrollY >= 460 && window.scrollY <= 1180) {
+    // console.log(window.abouth1Top);
+    // if(window.scrollY >= 460 && window.scrollY <= 1180) {
         about.children[0].classList.add('animation-slide-in-right');
         about.children[0].classList.add('about-landing');
-    }
-    if(window.scrollY >= 750 && window.scrollY <= 1660) {
+    // }
+    // if(window.scrollY >= 750 && window.scrollY <= 1660) {
         about.children[1].classList.add('animation-slide-in');
-    }
-    if(window.scrollY >= 1523 && window.scrollY <= 2246) {
+    // }
+    // if(window.scrollY >= 1523 && window.scrollY <= 2246) {
         projects.children[0].classList.add('animation-slide-in-right');
         projects.children[0].classList.add('projects-landing');
-    }
-    if(window.scrollY >= 1700 && window.scrollY <= 2700) {
+    // }
+    // if(window.scrollY >= 1700 && window.scrollY <= 2700) {
         projects.children[1].children[0].classList.add('animation-slide-in');
-    }
-    if(window.scrollY >= 1900 && window.scrollY <= 2700) {
+    // }
+    // if(window.scrollY >= 1900 && window.scrollY <= 2700) {
         projects.children[1].children[1].classList.add('animation-slide-in');
-    }
-    if(window.scrollY >= 2586) {
+    // }
+    // if(window.scrollY >= 2586) {
         contact.children[0].classList.add('animation-slide-in-right');
         contact.children[0].classList.add('projects-landing');
-    }
+    // }
 }
 
 window.addEventListener('scroll', () => {
