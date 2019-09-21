@@ -1047,6 +1047,9 @@ ul li a:hover {
         text-align: center;
         padding: 18px;
     }
+    ul li a {
+        font-size: 14px;
+    }
     .fixed-nav ul {
         position: fixed;
     }
