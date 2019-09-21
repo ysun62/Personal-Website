@@ -895,7 +895,41 @@ ul li a:hover {
     }    
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: landscape) {
+    #about img {
+        width: 35%;
+        margin-top: -10px;
+    }
+    #about p {
+        margin-top: -40px;
+        padding: 0 70px;
+        font-size: 18px;
+    }
+    .card1, .card2 {
+        width: 70vw;
+    }
+    .project1 {
+        margin-top: -50px;
+        margin-bottom: 70px;
+    }
+    .contact-method {
+        margin: 40px;
+    }
+    .contact-method i {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    .header-title {
+        font-size: 70px;
+    }
+    .header-subtitle {
+        font-size: 30px;
+    }
+    .header-button {
+        font-size: 25px;
+    }
     ul li a {
         margin: 0 -5px;
         font-size: 15px;
@@ -978,7 +1012,133 @@ ul li a:hover {
 }
 
 /* Phone Size */
+
+
+@media (max-width: 950px) and (orientation: landscape) {
+    .header-title {
+        font-size: 45px;
+    }
+    .header-subtitle {
+        font-size: 20px;
+    }
+    .header-button {
+        font-size: 15px;
+    }
+    nav {
+        background: none;
+        border-bottom: none;
+    }
+    ul {
+        /* color: black; */
+        background-color: #31302E;
+        width: 100%;
+        display: none;
+        z-index: 1;
+        height: 90%;
+        /* opacity: 0; */
+    }
+    .burger {
+        display: block;
+        border-bottom: 3px solid #51BE95;
+        background: rgb(27, 36, 47);
+    }
+    ul li {
+        display: block;
+        text-align: center;
+    }
+    .fixed-nav ul {
+        position: fixed;
+    }
+    #about h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    #about p {
+        font-size: 15px;
+        margin-top: -30px;
+    }
+    #about .content {
+        display: flex;
+        flex-direction: row;
+    }
+    #about img {
+        margin-left: 30px;
+        width: 30%;
+    }
+    #projects h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .project1 {
+        margin-top: -80px;
+        margin-bottom: 60px;
+    }
+    #contact h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .contact-method {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+    }
+    .background {
+        margin: -35px;
+    }
+    .contact-method a {
+        margin-left: 20px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .contact-method i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 666px) and (orientation: landscape) {
+    #about h1 {
+        font-size: 26px;
+    }
+    #about p {
+        font-size: 12px;
+    }
+    #about .content {
+        display: flex;
+        flex-direction: row;
+    }
+    #about img {
+        margin-left: 30px;
+        width: 35%;
+    }
+    #projects h1 {
+        font-size: 26px;
+    }
+    .project1 {
+        margin-top: -80px;
+        margin-bottom: 60px;
+    }
+    #contact h1 {
+        font-size: 26px;
+    }
+    .contact-method {
+        margin-left: 100px;
+    }
+    .contact-method a {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .contact-method i {
+        font-size: 36px;
+    }
+}
+
 @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .header-title {
+        font-size: 55px;
+    }
+    .header-subtitle {
+        font-size: 25px;
+    }
     nav {
         background: none;
         border-bottom: none;
@@ -998,9 +1158,6 @@ ul li a:hover {
         border-bottom: 3px solid #51BE95;
         background: rgb(27, 36, 47);
     }
-    .active {
-        display: block;
-    }
     ul li {
         display: block;
         text-align: center;
@@ -1009,6 +1166,21 @@ ul li a:hover {
         position: fixed;
     }
 
+    #about h1 {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+    #about p {
+        margin-top: -150px;
+    }
+    #projects h1 {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+    #contact h1 {
+        font-size: 40px;
+        margin-top: -10px;
+    }
     .card1 {
         width: 80vw;
     }
@@ -1050,11 +1222,20 @@ ul li a:hover {
     .header-subtitle {
         font-size: 17px;
     }
+    .header-button {
+        font-size: 18px;
+    }
 
     #about h1 {
+        font-size: 35px;
         margin-top: -10px;
     }
     #projects h1 {
+        font-size: 35px;
+        margin-top: -10px;
+    }
+    #contact h1 {
+        font-size: 35px;
         margin-top: -10px;
     }
     #about .content {
@@ -1064,8 +1245,8 @@ ul li a:hover {
         align-items: center;
     }
     #about img {
-        margin-top: 0px;
-        width: 60%;
+        margin-top: -50px;
+        width: 70%;
     }
     #about p {
         margin-top: 20px;
@@ -1128,5 +1309,3 @@ ul li a:hover {
         margin-bottom: 0px;
     }
 }
-
-/* @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait)  */

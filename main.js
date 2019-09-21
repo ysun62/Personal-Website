@@ -93,13 +93,13 @@ const scrollAnimation = () => {
     if(window.scrollY >= 1700 && window.scrollY <= 2700) {
         projects.children[1].children[0].classList.add('animation-slide-in');
     }
-    if(window.scrollY >= 1900 && window.scrollY <= 2700) {
+    // if(window.scrollY >= 1900 && window.scrollY <= 2700) {
         projects.children[1].children[1].classList.add('animation-slide-in');
-    }
-    if(window.scrollY >= 2586) {
+    // }
+    // if(window.scrollY >= 2586) {
         contact.children[0].classList.add('animation-slide-in-right');
         contact.children[0].classList.add('projects-landing');
-    }
+    // }
 }
 
 window.addEventListener('scroll', () => {
