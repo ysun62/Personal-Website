@@ -78,7 +78,7 @@ const handleScroll = () => {
 
 
 const scrollAnimation = () => {
-    console.log(window.innerHeight);
+    console.log(window.innerWidth);
     if(window.scrollY >= 460 && window.scrollY <= 1180) {
         about.children[0].classList.add('animation-slide-in-right');
         about.children[0].classList.add('about-landing');

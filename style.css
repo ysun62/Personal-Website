@@ -162,14 +162,15 @@ body {
 
 /* Nav CSS */
 nav {
-    background: rgba(27, 36, 47);
+    background: rgb(27, 36, 47);
     border-bottom: 3px solid #51BE95;
 }
 
 .nav-active {
-    opacity: 1;
+    /* opacity: 1; */
     display: block;
     position: absolute;
+    /* transition: opacity 2s ease; */
 }
 
 .fixed-nav {
@@ -191,7 +192,7 @@ ul {
 
 ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     list-style: none;
 }
 
@@ -218,7 +219,6 @@ ul li a:hover {
 .burger {
     display: none;
     cursor: pointer;
-    /* background: red; */
     padding: 10px 30px;
 
 }
@@ -236,26 +236,26 @@ ul li a:hover {
 @-webkit-keyframes navLinkFade {
     from {
         opacity: 0;
-        -webkit-transform: translateX(50px);
-                transform: translateX(50px);
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
     }
     to {
         opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        -webkit-transform: translateX(50px);
-                transform: translateX(50px);
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
     }
     to {
         opacity: 1;
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
@@ -796,7 +796,7 @@ ul li a:hover {
 
 @media (max-width: 1700px) {
     ul {
-        width: 40%;
+        /* width: 40%; */
     }
     #about img {
         width: 43%;
@@ -866,7 +866,7 @@ ul li a:hover {
 
 @media (max-width: 1250px) {
     ul {
-        width: 50%;
+        /* width: 50%; */
     }
     #about .content {
         display: -webkit-box;
@@ -896,25 +896,43 @@ ul li a:hover {
 }
 
 @media (max-width: 1024px) {
-    ul {
-        width: 65%;
+    ul li a {
+        margin: 0 -5px;
+        font-size: 15px;
+    }
+    #about h1 {
+        font-size: 50px;
+    }
+    #projects h1 {
+        font-size: 50px;
+    }
+    #contact h1 {
+        font-size: 50px;
+    }
+    #about img {
+        width: 55%;
+        margin-top: -80px;
+        margin-bottom: 0;
+    }
+    #about p {
+        margin-top: -150px;
     }
     .card1 {
-        width: 130%;
+        width: 80vw;
     }
     #projects .box1 {
         width: 100%;
     }
     .text1 {
-        width: 130%;
+        width: 80vw;
         background: #5B788A;
     }
     .text2 {
-        width: 130%;
+        width: 80vw;
         background: #2E2E2E;
     }
     .card2 {
-        width: 130%;
+        width: 80vw;
     }
     #projects .box2 {
         width: 100%;
@@ -948,6 +966,9 @@ ul li a:hover {
         font-size: 15px;
         margin-top: 0;
     }
+    .contact-method i {
+        font-size: 75px;
+    }
 }
 
 @media (max-width: 786px) {
@@ -957,21 +978,25 @@ ul li a:hover {
 }
 
 /* Phone Size */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
     nav {
         background: none;
+        border-bottom: none;
     }
     ul {
-        color: black;
-        background-color: black;
+        /* color: black; */
+        background-color: #31302E;
         width: 100%;
         display: none;
         z-index: 1;
+        
+        /* opacity: 0; */
     }
     
     .burger {
         display: block;
-        background: #2E2E2E;
+        border-bottom: 3px solid #51BE95;
+        background: rgb(27, 36, 47);
     }
     .active {
         display: block;
@@ -1012,13 +1037,13 @@ ul li a:hover {
         margin: 30px;
     }
     .contact-method i {
-        font-size: 55px;
+        font-size: 60px;
         margin-bottom: 0px;
     }
     
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     .header-title {
         font-size: 35px;
     }
@@ -1047,6 +1072,10 @@ ul li a:hover {
         margin-left: 17px;
         font-size: 17px;
     }
+    nav {
+        background: none;
+        border-bottom: none;
+    }
     ul {
         color: black;
         background-color: black;
@@ -1057,7 +1086,8 @@ ul li a:hover {
     }
     .burger {
         display: block;
-        background: #2E2E2E;
+        border-bottom: 3px solid #51BE95;
+        background: rgb(27, 36, 47);
     }
     .active {
         display: block;
@@ -1098,3 +1128,5 @@ ul li a:hover {
         margin-bottom: 0px;
     }
 }
+
+/* @media (min-width: 481px) and (max-width: 768px) and (orientation: portrait)  */
