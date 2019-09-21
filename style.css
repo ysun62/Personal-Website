@@ -216,6 +216,10 @@ ul li a:hover {
     transition: 0.5s;
 }
 
+.current-page {
+    color: #51BE95;
+}
+
 .burger {
     display: none;
     cursor: pointer;
@@ -1045,7 +1049,7 @@ ul li a:hover {
     ul li {
         display: block;
         text-align: center;
-        padding: 18px;
+        padding: 17px;
     }
     ul li a {
         font-size: 14px;
