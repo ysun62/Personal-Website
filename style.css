@@ -1256,6 +1256,9 @@ ul li a:hover {
         font-size: 35px;
         margin-top: -10px;
     }
+    #about {
+        min-height: 100vh;
+    }
     #about .content {
         display: flex;
         flex-direction: column;
@@ -1268,8 +1271,9 @@ ul li a:hover {
     }
     #about p {
         padding: 0;
-        margin-top: -10px;
+        margin-top: 0px;
         font-size: 14px;
+        line-height: 30px;
     }
     nav {
         background: none;
