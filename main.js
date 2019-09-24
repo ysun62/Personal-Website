@@ -67,7 +67,7 @@ const scrollAnimation = () => {
     if(window.scrollY/window.innerHeight >= 1.53 && window.scrollY/window.innerHeight <= 2.5) {
         projects.children[1].children[0].classList.add('animation-slide-in');
     }
-    if(window.scrollY/window.innerHeight >= 2.15 && window.scrollY/window.innerHeight <= 2.8) {
+    if(window.scrollY/window.innerHeight >= 2.0 && window.scrollY/window.innerHeight <= 2.8) {
         projects.children[1].children[1].classList.add('animation-slide-in');
     }
     if(window.scrollY/window.innerHeight >= 2.46) {
