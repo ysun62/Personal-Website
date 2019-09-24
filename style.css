@@ -311,7 +311,7 @@ ul li a:hover {
     left: -50%;
     opacity: 0;
     width: 50%;
-    height: 3%;
+    height: 3px;
     background: black;
     display: block;
     position: absolute;
@@ -488,7 +488,7 @@ ul li a:hover {
     left: -50%;
     opacity: 0;
     width: 50%;
-    height: 3%;
+    height: 3px;
     background: black;
     display: block;
     position: absolute;
@@ -704,7 +704,7 @@ ul li a:hover {
     left: -50%;
     opacity: 0;
     width: 50%;
-    height: 3%;
+    height: 3px;
     background: black;
     display: block;
     position: absolute;
