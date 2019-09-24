@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2.png">    
     <title>Yang Sun</title>
 </head>
 <body>
@@ -28,12 +29,12 @@
             <!-- <div>
                 <h4><a href="#home" class="logo">Yang Sun</a></h4>
             </div> -->
-            <div class="burger">
+            <div class="burger hide-on-desktop">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul>
+            <ul class="hide-on-mobile">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -45,33 +46,32 @@
 
         <!-- About page -->
         <div id="about">
-            <h1>About</h1>
+            <h2>About</h2>
             <div class="content">
-                <p class="about-text">Hi my name is Yang Sun and I’m a recent UCSC grad in Technology & Information Management. Upon taking a course in Web Applications this spring, I was introduced to the world of Web Development and became incredibly passionate about both frontend and backend. I am an eager to learn team-player who is currently focusing on the basics of html, css, and javascript. </p>
+                <p class="about-text">Hi my name is Yang Sun and I’m a recent UCSC grad in Technology & Information Management. Upon taking a course in Web Applications this spring, I was introduced to the world of Web Development and became incredibly passionate about both frontend and backend. I am an eager to learn team-player who is currently focusing on the basics of HTML5, CSS3, and Javascript. </p>
                 <img src="./image/me.png" alt="me" class="about-img">
             </div>
         </div>
 
         <!-- Projects page -->
         <div id="projects">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div class="content">
                 <div class="project1">
                     <!-- <div class="box1"></div> -->
-                    <div class="card1">
-                        <img src="./image/django_home.png" alt="" class="box1">
-                        <div class="card1_text">
+                    <div class="pic1">
+                        <!-- <img src="./image/django_home.png" alt="" class="box1"> -->
+                        <!-- <div class="card1_text">
                             <h4>Django</h4>
                             <h4>HTML5</h4>
-                            <h4>CSS</h4>
+                            <h4>CSS3</h4> -->
                             <!-- <button class="btn btn1">See Code</button> -->
-                            <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
-                        </div>
+                            <!-- <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
+                        </div> -->
                     </div>
                     <div class="text1">
                         <div class="text">
                             A back-end blog implemented with Django, which allows the user to:
-                            <!-- <br><br/> -->
                             <ol>
                                 <li>(1) create/read/update/delete blogs</li>
                                 <li>(2) create/read/update/delete user profile</li>
@@ -81,16 +81,14 @@
                     </div>
                 </div>
                 <div class="project2">
-                    <!-- <div class="box2"></div> -->
-                    <div class="card2">
-                        <img src="./image/web2py_home.png" alt="" class="box2">
-                        <div class="card2_text">
+                    <div class="pic2">
+                        <!-- <img src="./image/web2py_home.png" alt="" class="box2"> -->
+                        <!-- <div class="card2_text">
                             <h4>Web2py</h4>
                             <h4>Vue.js</h4>
                             <h4>HTML5</h4>
-                            <!-- <button class="btn btn2">See Code</button> -->
                             <a href="https://github.com/ysun62/Shopping-Website" target="_blank" class="btn btn2">See Code</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="text2">
                         <div class="text">
@@ -107,7 +105,7 @@
 
         <!-- Contact Page -->
         <div id="contact">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <div class="contact-wrapper">
                 <div class="background bg1">
                     <div class="contact-method github">
@@ -133,7 +131,7 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="main.js"></script> -->
 </body>
 </html>
