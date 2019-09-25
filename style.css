@@ -67,9 +67,15 @@ body {
     color: #51BE95;
 }
 
-.header-button:hover {
-    background: #696969;
-    color: white;
+#home i {
+    display: block;
+    color: #51BE95;
+    font-size: 2.5em;
+}
+
+.header-button:hover i {
+    transform: scale(1.5);
+    transition: transform 0.5s ease-in-out;
 }
 
 .animation-pop-in {
@@ -88,22 +94,35 @@ body {
 
 .header-subtitle {
     color: #696969;
-    font-size: 20px;
+    font-size: 25px;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
 }
 
 .header-button {
+    position: absolute;
+    bottom: 0;
     font-size: 18px;
     text-decoration: none;
-    color: #696969;
-    border: 2px solid #696969;
-    border-radius: 10px;
+    color: black;
+    /* border: 2px solid #51BE95; */
+    /* border-radius: 10px; */
     padding: 10px 20px;
     margin-top: 30px;
     cursor: pointer;
+    opacity: 0;
+    animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
     -webkit-animation-delay: 1.2s;
             animation-delay: 1.2s;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @-webkit-keyframes img-slide-down {
@@ -140,8 +159,8 @@ body {
     }
     to {
         opacity: 1;
-        -webkit-transform: none;
-                transform: none;
+        /* -webkit-transform: none; */
+                transform: translateY(50em);
     }
 }
 
