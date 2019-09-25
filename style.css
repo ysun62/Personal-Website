@@ -1279,6 +1279,10 @@ ul li a:hover {
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
+    .wrapper {
+        margin-bottom: 50px;
+        
+    }
     .header-title {
         font-size: 35px;
     }
@@ -1286,6 +1290,7 @@ ul li a:hover {
         font-size: 17px;
     }
     .header-button {
+        margin-bottom: 50px;
         font-size: 18px;
     }
 
