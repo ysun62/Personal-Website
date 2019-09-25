@@ -1068,10 +1068,10 @@ ul li a:hover {
         margin-bottom: 40px;
     }
     .header-title {
-        font-size: 30px;
+        font-size: 35px;
     }
     .header-subtitle {
-        font-size: 15px;
+        font-size: 18px;
     }
     .header-button {
         font-size: 15px;
@@ -1210,6 +1210,10 @@ ul li a:hover {
     .header-subtitle {
         font-size: 25px;
     }
+    .header-button:hover i {
+        transform: none;
+        transition: none;
+    }
     nav {
         background: none;
         border-bottom: none;
@@ -1290,7 +1294,6 @@ ul li a:hover {
 @media (max-width: 480px) and (orientation: portrait) {
     .wrapper {
         margin-bottom: 70px;
-        
     }
     .header-title {
         font-size: 35px;
@@ -1301,6 +1304,10 @@ ul li a:hover {
     .header-button {
         margin-bottom: 70px;
         font-size: 18px;
+    }
+    .header-button:hover i {
+        transform: none;
+        transition: none;
     }
 
     #about h1 {
