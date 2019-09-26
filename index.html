@@ -15,13 +15,17 @@
         <!-- Home page -->
         <div id="home">
             <header id="background">
-                <h1 class="header-title animation-pop-in">
-                    Hi I'm <span class="name animation-pop-in">Yang Sun</span>.
-                </h1>
-                <p class="header-subtitle animation-pop-in">
-                    Full-Stack Enthusiast
-                </p>
-                <a href="#about" class="header-button animation-pop-in">Learn More</a>
+                <div class="home-wrapper">
+                    <h1 class="header-title animation-pop-in">
+                        Hi I'm <span class="name">Yang Sun</span>.
+                    </h1>
+                    <p class="header-subtitle animation-pop-in">
+                        Full-Stack Enthusiast
+                    </p>
+                </div>
+                <a href="#about" class="header-button">
+                    <i class="fa fa-arrow-circle-down"></i>
+                </a>
             </header>
         </div>
 
@@ -57,18 +61,17 @@
         <div id="projects">
             <h2>Projects</h2>
             <div class="content">
-                <div class="project1">
+                <div class="project project1">
                     <!-- <div class="box1"></div> -->
-                    <div class="box box1">
-                        <img src="./image/django_home.png" alt="" class="pic pic1">
-                        <!-- <div class="box1_text">
+                    <div class="first-half first-project-img">
+                        <img src="./image/django_home.png" alt="django-blog-screenshot" class="screenshot ss1">
+                        <div class="language-used">
                             <h4>Django</h4>
                             <h4>HTML5</h4>
                             <h4>CSS3</h4>
-                            <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
-                        </div> -->
+                        </div>
                     </div>
-                    <div class="text1">
+                    <div class="second-half first-project-text">
                         <div class="text">
                             A back-end blog implemented with Django, which allows the user to:
                             <ol>
@@ -76,26 +79,32 @@
                                 <li>(2) create/read/update/delete user profile</li>
                             </ol>
                         </div>
-                        
+                        <div class="project-button">
+                            <a href="" target="_blank" class="btn btn1 inactiveLink">Coming Soon</a>
+                            <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project2">
-                    <div class="box box2">
-                        <img src="./image/web2py_home.png" alt="" class="pic pic2">
-                        <!-- <div class="box2_text">
+                <div class="project project2">
+                    <div class="first-half second-project-img">
+                        <img src="./image/web2py_home.png" alt="web2py-shopping-screenshot" class="screenshot ss2">
+                        <div class="language-used">
                             <h4>Web2py</h4>
                             <h4>Vue.js</h4>
                             <h4>HTML5</h4>
-                            <a href="https://github.com/ysun62/Shopping-Website" target="_blank" class="btn btn2">See Code</a>
-                        </div> -->
+                        </div>
                     </div>
-                    <div class="text2">
+                    <div class="second-half second-project-text">
                         <div class="text">
                             A full-stack online shopping website built with Web2py and Vue.js, which allows the user to:
                             <ol>
                                 <li>(1) create/buy products</li>
                                 <li>(2) read/leave reviews and ratings</li>
                             </ol>
+                        </div>
+                        <div class="project-button">
+                            <a href="https://ysun62.pythonanywhere.com/shopping_site/default/index" target="_blank" class="btn btn2">Visit Site</a>
+                            <a href="https://github.com/ysun62/Shopping-Website" target="_blank" class="btn btn2">See Code</a>
                         </div>
                     </div>
                 </div>
