@@ -42,7 +42,7 @@ const nav = document.querySelector('nav');
 const navTop = nav.offsetTop;
 
 const handleScroll = () => {
-    // console.log(window.scrollY, pageYOffset);
+    console.log(window.scrollY, pageYOffset);
     if(window.scrollY >= navTop) {
         document.body.style.paddingTop = nav.offsetHeight + 'px';
         nav.classList.add('fixed-nav');
