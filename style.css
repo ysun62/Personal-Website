@@ -350,7 +350,6 @@ ul li a:hover {
     opacity: 0;
     margin-bottom: 70px;
     width: 100%;
-    background: yellow;
 }
 
 #about p {
@@ -878,7 +877,6 @@ ul li a:hover {
     }
     .button {
         width: 45%;
-        /* background: yellow; */
         margin-bottom: 20px;
     }
     .btn1, .btn2 {
