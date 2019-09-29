@@ -17,6 +17,9 @@ body {
     height: 100%;
 }
 
+h2 {
+    font-size: 40px;
+}
 
 
 /* Home Page CSS */
@@ -102,7 +105,7 @@ body {
 .header-button {
     position: absolute;
     bottom: 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     text-decoration: none;
     color: black;
@@ -315,7 +318,7 @@ ul li a:hover {
             align-items: center;
 }
 
-#about h1 {
+#about h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -326,7 +329,7 @@ ul li a:hover {
     opacity: 0;
 }
 
-#about h1::after {
+#about h2::after {
     content: '';
     left: -50%;
     opacity: 0;
@@ -353,11 +356,9 @@ ul li a:hover {
 }
 
 #about p {
-    font-size: 20px;
-    /* padding-right: 20px; */
+    font-size: 25px;
     text-align: left;
     order: 2;
-
     line-height: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -365,8 +366,8 @@ ul li a:hover {
 
 #about img {
     order: 1;
-    /* margin-left: 100px; */
-    width: 35%;
+    margin-left: 100px;
+    width: 30%;
 }
 
 .about-landing::after{
@@ -496,7 +497,7 @@ ul li a:hover {
             align-items: center;
 }
 
-#projects h1 {
+#projects h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -507,7 +508,7 @@ ul li a:hover {
     opacity: 0;
 }
 
-#projects h1::after {
+#projects h2::after {
     content: '';
     left: -50%;
     opacity: 0;
@@ -725,7 +726,7 @@ ul li a:hover {
     background: #f5f5f5;
 }
 
-#contact h1 {
+#contact h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -736,7 +737,7 @@ ul li a:hover {
     opacity: 0;
 }
 
-#contact h1::after {
+#contact h2::after {
     content: '';
     left: -50%;
     opacity: 0;
@@ -925,15 +926,20 @@ ul li a:hover {
         height: 70vh;
         margin-bottom: 0;
     }
+    h2 {
+        font-size: 35px;
+    }
     #about p {
+        font-size: 18px;
         text-align: center;
+        margin-top: -50px;
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
     }
     #about img {
-        width: 45%;
-        margin-right:0;
+        width: 35%;
+        margin: 20px 0 0 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1;
@@ -968,7 +974,7 @@ ul li a:hover {
     }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (max-width: 1024px) and (min-height: 1100px) and (orientation: portrait) {
     .header-title {
         font-size: 70px;
     }
@@ -982,22 +988,16 @@ ul li a:hover {
         margin: 0 -5px;
         font-size: 15px;
     }
-    #about h1 {
-        font-size: 50px;
-    }
-    #projects h1 {
-        font-size: 50px;
-    }
-    #contact h1 {
+    h2 {
         font-size: 50px;
     }
     #about img {
-        width: 40%;
-        margin-top: -50px;
+        width: 50%;
+        margin-top: 0px;
         margin-bottom: 0;
     }
     #about p {
-        margin-top: -100px;
+        margin-top: -150px;
     }
     .card1 {
         width: 80vw;
@@ -1104,7 +1104,7 @@ ul li a:hover {
     .fixed-nav ul {
         position: fixed;
     }
-    #about h1 {
+    h2 {
         font-size: 30px;
         margin-top: 0;
     }
@@ -1120,10 +1120,6 @@ ul li a:hover {
         margin-left: 30px;
         width: 30%;
     }
-    #projects h1 {
-        font-size: 30px;
-        margin-top: 0;
-    }
     .project1 {
         margin-top: -80px;
         margin-bottom: 60px;
@@ -1131,11 +1127,6 @@ ul li a:hover {
 
     .button {
         width: 75%;
-    }
-
-    #contact h1 {
-        font-size: 30px;
-        margin-top: 0;
     }
     .contact-method {
         display: flex;
@@ -1159,7 +1150,7 @@ ul li a:hover {
     ul li {
         padding: 12px;
     }
-    #about h1 {
+    h2 {
         font-size: 26px;
     }
     #about p {
@@ -1174,15 +1165,9 @@ ul li a:hover {
         margin-left: 30px;
         width: 35%;
     }
-    #projects h1 {
-        font-size: 26px;
-    }
     .project1 {
         margin-top: -80px;
         margin-bottom: 60px;
-    }
-    #contact h1 {
-        font-size: 26px;
     }
     .contact-method {
         margin-left: 100px;
@@ -1196,7 +1181,7 @@ ul li a:hover {
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+@media (min-width: 592px) and (max-width: 768px) and (orientation: portrait) {
     .header-title {
         font-size: 55px;
     }
@@ -1230,22 +1215,19 @@ ul li a:hover {
         position: fixed;
     }
 
-    #about h1 {
+    h2 {
         font-size: 40px;
         margin-top: -10px;
+    }
+    #about img {
+        width: 50%;
+        margin-top: 0;
     }
     #about p {
-        font-size: 15px;
+        font-size: 17px;
         margin-top: -100px;
     }
-    #projects h1 {
-        font-size: 40px;
-        margin-top: -10px;
-    }
-    #contact h1 {
-        font-size: 40px;
-        margin-top: -10px;
-    }
+
     .card1 {
         width: 80vw;
     }
@@ -1280,7 +1262,7 @@ ul li a:hover {
     
 }
 
-@media (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 591px) and (orientation: portrait) {
     .wrapper {
         margin-bottom: 70px;
     }
@@ -1299,17 +1281,9 @@ ul li a:hover {
         transition: none;
     }
 
-    #about h1 {
+    h2 {
         font-size: 35px;
-        margin-top: -10px;
-    }
-    #projects h1 {
-        font-size: 35px;
-        margin-top: -10px;
-    }
-    #contact h1 {
-        font-size: 35px;
-        margin-top: -10px;
+        /* margin-top: -10px; */
     }
     #about {
         min-height: 100vh;
@@ -1321,7 +1295,7 @@ ul li a:hover {
         align-items: center;
     }
     #about img {
-        margin-top: 40px;
+        margin-top: 0px;
         width: 70%;
     }
     #about p {
@@ -1391,23 +1365,36 @@ ul li a:hover {
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
+    h2 {
+        font-size: 35px;
+    }
     #about p {
         line-height: 25px;
     }
     #about img {
         width: 95%;
-        margin-top: 45px;
+        margin-top: 0px;
     }
 }
 
 @media (max-width: 375px) and (max-height: 720px) and (orientation: portrait) {
-
+    #about img {
+        width: 75%;
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 320px) and (orientation: portrait) {
+    h2 {
+        font-size: 27px;
+    }
     #about p {
         font-size: 13px;
         line-height: 20px;
+    }
+    .btn {
+        padding: 2px;
+        font-size: 14px;
     }
     .contact-method i {
         font-size: 40px;

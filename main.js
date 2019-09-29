@@ -3,8 +3,8 @@ const projects = document.querySelector('#projects');
 const contact = document.querySelector('#contact');
 const navItems = document.querySelectorAll('ul li');
 const whole_page = document.querySelector('.container');
-const abouth1 = document.querySelector('#about h1');
-const abouth1Top = abouth1.offsetTop;
+const abouth2 = document.querySelector('#about h2');
+const abouth2Top = abouth2.offsetTop;
 
 
 //Smooth Scroll
