@@ -1337,6 +1337,10 @@ ul li a:hover {
     .button {
         width: 80%;
     }
+    .btn {
+        padding: 3px 0;
+        font-size: 14px;
+    }
     .btn2 {
         margin-top: 1px;
     }
@@ -1391,10 +1395,6 @@ ul li a:hover {
     #about p {
         font-size: 13px;
         line-height: 20px;
-    }
-    .btn {
-        padding: 2px;
-        font-size: 14px;
     }
     .contact-method i {
         font-size: 40px;
