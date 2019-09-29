@@ -680,13 +680,13 @@ ul li a:hover {
     color: #2E2E2E;
 }
 
-.inactiveLink {
+/* .inactiveLink {
     pointer-events: none;
     cursor: default;
     border: 2px solid #cccccc;
     color: #f5f5f5;
     background: #cccccc;
-}
+} */
 
 .btn::before {
     content: "";
@@ -840,9 +840,6 @@ ul li a:hover {
 }
 
 @media (max-width: 1700px) {
-    ul {
-        /* width: 40%; */
-    }
     #about img {
         width: 38%;
     }
@@ -917,9 +914,6 @@ ul li a:hover {
 }
 
 @media (max-width: 1250px) {
-    ul {
-        /* width: 50%; */
-    }
     #about .content {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1059,15 +1053,10 @@ ul li a:hover {
     }
 }
 
-@media (max-width: 786px) {
-    .btn2 {
-        /* margin-top: -17px; */
-    }
-}
+
+
 
 /* Phone Size */
-
-
 @media (max-height: 450px) and (max-width: 950px) and (orientation: landscape) {
     .wrapper {
         margin-bottom: 40px;
