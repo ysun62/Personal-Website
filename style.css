@@ -70,10 +70,21 @@ h2 {
     color: #51BE95;
 }
 
-#home i {
+.header-button i {
     display: block;
     color: #51BE95;
     font-size: 2.5em;
+}
+
+.home-contact a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.home-contact i {
+    font-size: 32px;
+    margin: 10px;
+    animation-delay: 1.2s;
 }
 
 .header-button:hover i {
@@ -117,7 +128,7 @@ h2 {
     opacity: 0;
     animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
     -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+            animation-delay: 1.4s;
 }
 
 @keyframes up-and-down {
@@ -1067,6 +1078,10 @@ ul li a:hover {
     .header-subtitle {
         font-size: 18px;
     }
+    .home-contact i {
+        font-size: 25px;
+        margin: 10px 5px;
+    }
     .header-button {
         font-size: 15px;
         margin-bottom: 40px;
@@ -1271,6 +1286,10 @@ ul li a:hover {
     }
     .header-subtitle {
         font-size: 17px;
+    }
+    .home-contact i {
+        font-size: 25px;
+        margin: 10px 5px;
     }
     .header-button {
         margin-bottom: 70px;
