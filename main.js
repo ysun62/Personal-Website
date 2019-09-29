@@ -1,27 +1,40 @@
 const about = document.querySelector('#about');
 const projects = document.querySelector('#projects');
 const contact = document.querySelector('#contact');
-const navItems = document.querySelectorAll('ul li');
+const burger = document.querySelector('.burger');
+const ul = document.querySelector('ul');
+const ulItems = document.querySelectorAll('ul li');
+const navLinks = document.querySelectorAll('ul li a');
 const whole_page = document.querySelector('.container');
 const abouth2 = document.querySelector('#about h2');
 const abouth2Top = abouth2.offsetTop;
+const nav = document.querySelector('nav');
 
 
 //Smooth Scroll
 const scroll = new SmoothScroll('a[href*="#"]', {speed: 500});
 
 
+//Handling Click
+const handleClick = () => {
+    ul.classList.remove('nav-active');
+    burger.classList.remove('toggleBurger');
+    ulItems.forEach((item) => {
+        item.style.animation = '';
+    });
+}
+
+
 //Nav Animation
 const navAnimation = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('ul');
-
     burger.addEventListener('click', () => {
         //Toggle Nav
-        nav.classList.toggle('nav-active');
+        ul.classList.toggle('nav-active');
 
-        //Animate NavItems
-        navItems.forEach((item, index) => {
+        console.log('click');
+
+        //Animate ulItems
+        ulItems.forEach((item, index) => {
             if(item.style.animation) {
                 item.style.animation = '';
             } else {
@@ -31,18 +44,31 @@ const navAnimation = () => {
 
         //Animate Burger
         burger.classList.toggle('toggleBurger');
+
+        // Toggle Nav After Click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                handleClick();
+            });
+        });
     });
+
 }
 
 navAnimation();
-  
+
+// document.addEventListener('click', (e) => {
+//     if(e.target.parentNode !== ul && e.target.parentNode !== burger) {
+//         handleClick();
+//         console.log('outside');
+//     }
+// });
 
 //Sticky Nav + Some Animation
-const nav = document.querySelector('nav');
 const navTop = nav.offsetTop;
 
 const handleScroll = () => {
-    console.log(window.scrollY, pageYOffset);
+    // console.log(window.scrollY, pageYOffset);
     if(window.scrollY >= navTop) {
         document.body.style.paddingTop = nav.offsetHeight + 'px';
         nav.classList.add('fixed-nav');
@@ -77,11 +103,10 @@ const scrollAnimation = () => {
 }
 
 const pageHighlight = () => {
-    const sections = document.querySelectorAll('ul li a');
     let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
     
-    for(let i = 0; i < sections.length-1; i++) {
-        let current_page = sections[i]; 
+    for(let i = 0; i < navLinks.length-1; i++) {
+        let current_page = navLinks[i]; 
         let value = current_page.getAttribute('href');
         let page = document.querySelector(value);
         if(page.offsetTop <= scrollPos && (page.offsetTop + page.offsetHeight > scrollPos)) {
