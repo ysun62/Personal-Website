@@ -93,8 +93,14 @@ a {
     z-index: -1;
 }
 
+.animation-pop-in {
+    -webkit-animation: pop-in 1s ease-out forwards;
+            animation: pop-in 1s ease-out forwards;
+    opacity: 0;
+}
+
 .home-wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .home-contact a {
@@ -111,12 +117,15 @@ a {
 h1 {
     color: #696969;
     font-size: 2.3em;
-    -webkit-animation-delay: .8s;
-            animation-delay: .8s;
 }
 
 .name {
     color: #51BE95;
+}
+
+.header-title {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
 }
 
 .header-subtitle {
@@ -132,25 +141,14 @@ h1 {
     bottom: 0;
     font-size: 40px;
     color: #51BE95;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     cursor: pointer;
+    opacity: 0;
     -webkit-animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
             animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
     -webkit-animation-delay: 1.4s;
             animation-delay: 1.4s;
 }
-
-.animation-pop-in {
-    -webkit-animation: pop-in 1s ease-out forwards;
-            animation: pop-in 1s ease-out forwards;
-    opacity: 0;
-}
-
-/* .header-button:hover {
-    background-color: rgb(136, 135, 134);
-    transform: scale(1.5);
-    transition: transform 0.5s ease-in-out;
-} */
 
 @-webkit-keyframes img-slide-down {
     from {
@@ -1000,7 +998,11 @@ ul li a:hover {
 
 @media screen and (min-width: 1300px) {
     .header-button {
-        font-size: 55px;
+        font-size: 45px;
+    }
+    .header-button:hover i {
+        transform: scale(1.5);
+        transition: transform 0.5s ease-in-out;
     }
     nav {
         height: 6vh;
