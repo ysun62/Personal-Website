@@ -97,9 +97,22 @@ a {
     margin-bottom: 70px;
 }
 
+.home-contact a {
+    text-decoration: none;
+    color: #696969;
+}
+
+.home-contact i {
+    font-size: 32px;
+    margin: 10px;
+    animation-delay: 1.2s;
+}
+
 h1 {
     color: #696969;
     font-size: 2.3em;
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s;
 }
 
 .name {
@@ -110,6 +123,8 @@ h1 {
     margin-top: 5px;
     color: #696969;
     font-size: 1.3em;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .header-button {
@@ -121,8 +136,8 @@ h1 {
     cursor: pointer;
     -webkit-animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
             animation: pop-in 1s ease-out forwards, up-and-down 1s infinite alternate;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
 }
 
 .animation-pop-in {
@@ -673,6 +688,12 @@ ul li a:hover {
         line-height: 1.7em;
         font-size: 15px;
     }
+    nav {
+        height: 7vh;
+    }
+    .btn {
+        padding: 5px;
+    }
 }
 
 /* iphone 5/SE */
@@ -701,6 +722,9 @@ ul li a:hover {
     #about p {
         font-size: 13px;
         line-height: 1.7em;
+    }
+    .btn {
+        padding: 5px 3px;
     }
 }
 
@@ -756,9 +780,6 @@ ul li a:hover {
         margin: 0 auto;
         width: 90%;
     }
-    .btn {
-        padding: 4px;
-    }
     .contact-wrapper {
         margin-top: 2em;
     }
@@ -787,10 +808,10 @@ ul li a:hover {
 
 @media screen and (min-width: 736px) and (orientation: landscape) {
     nav {
-        height: 11vh;
+        height: 13.5vh;
     }
     ul {
-        top: 11vh;
+        top: 13.5vh;
     }
     .burger {
         width: 5%;
