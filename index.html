@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shorcut icon" type="image/png" sizes="32x32" href="logo.png">  
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">    
     <title>Yang Sun</title>
 </head>
 <body>
@@ -15,9 +15,9 @@
         <!-- Home page -->
         <div id="home">
             <header id="background">
-                <div class="wrapper">
+                <div class="home-wrapper">
                     <h1 class="header-title animation-pop-in">
-                        Hi I'm <span class="name animation-pop-in">Yang Sun</span>.
+                        Hi I'm <span class="name">Yang Sun</span>.
                     </h1>
                     <p class="header-subtitle animation-pop-in">
                         Full-Stack Enthusiast
@@ -28,22 +28,19 @@
                         <a href="mailto:ysun62@ucsc.edu"><i class="fa fa-envelope animation-pop-in"></i></a>
                     </div>
                 </div>
-                <a href="#about" class="header-button"><i class="fa fa-arrow-circle-down arrow"></i>
+                <a href="#about" class="header-button">
+                    <i class="fa fa-arrow-circle-down"></i>
                 </a>
-                
             </header>
         </div>
 
         <nav>
-            <!-- <div>
-                <h4><a href="#home" class="logo">Yang Sun</a></h4>
-            </div> -->
-            <div class="burger">
+            <div class="burger hide-on-desktop">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-            <ul>
+            <ul class="hide-on-mobile">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -55,58 +52,65 @@
 
         <!-- About page -->
         <div id="about">
-            <h2>About</h2>
-            <div class="content">
-                <p class="about-text">Hi my name is Yang Sun and I’m a recent UCSC grad in Technology & Information Management. Upon taking a course in Web Applications this spring, I was introduced to the world of Web Development and became incredibly passionate about both frontend and backend. I am an eager-to-learn team player who is currently focusing on mastering CSS, Javascript, and learning React. </p>
-                <img src="./image/me.png" alt="me" class="about-img">
-            </div>
+            <div class="container" id="container1">
+                <h2>About</h2>
+                <div class="content">
+                    <p class="about-text">Hi my name is Yang Sun and I’m a recent UCSC grad in Technology & Information Management. Upon taking a course in Web Applications this spring, I was introduced to the world of Web Development and became incredibly passionate about both frontend and backend. I am an eager to learn team-player who is currently focusing on mastering Javascript and learning React. </p>
+                    <img src="./image/me.png" alt="me" class="about-img">
+                </div>
+            </div> 
         </div>
 
         <!-- Projects page -->
         <div id="projects">
-            <h2>Projects</h2>
-            <div class="content">
-                <div class="project1">
-                    <!-- <div class="box1"></div> -->
-                    <div class="card card1">
-                        <img src="./image/django_home.png" alt="" class="box1">
-                        <div class="card1_text">
-                            <h4>Django</h4>
-                            <h4>HTML5</h4>
-                            <h4>CSS</h4>
+            <div class="container" id="container2">
+                <h2>Projects</h2>
+                <div class="content">
+                    <div class="project project1">
+                        <!-- <div class="box1"></div> -->
+                        <div class="first-half first-project-img">
+                            <img src="./image/django_home.png" alt="django-blog-screenshot" class="screenshot ss1">
+                            <div class="language-used">
+                                <h4>Django</h4>
+                                <h4>HTML5</h4>
+                                <h4>CSS3</h4>
+                            </div>
+                        </div>
+                        <div class="second-half first-project-text">
+                            <div class="project-text">
+                                A back-end blog implemented with Django, which allows the user to:
+                                <ol>
+                                    <li>(1) create/read/update/delete blogs</li>
+                                    <li>(2) create/read/update/delete user profile</li>
+                                </ol>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://djangoprojectblogapp.herokuapp.com/" target="_blank" class="btn btn1 inactiveLink">Visit Site</a>
+                                <a href="https://github.com/ysun62/Django-Blog" target="_blank" class="btn btn1">See Code</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="text1">
-                        <div class="text">
-                            A back-end blog implemented with Django, which allows the user to:
-                            <ol>
-                                <li>(1) create/read/update/delete blogs</li>
-                                <li>(2) create/read/update/delete user profile</li>
-                            </ol>
+                    <div class="project project2">
+                        <div class="first-half second-project-img">
+                            <img src="./image/web2py_home.png" alt="web2py-shopping-screenshot" class="screenshot ss2">
+                            <div class="language-used">
+                                <h4>Web2py</h4>
+                                <h4>Vue.js</h4>
+                                <h4>HTML5</h4>
+                            </div>
                         </div>
-                        <div class="button">
-                            <a href="https://djangoprojectblogapp.herokuapp.com/" target="_blank" class="btn btn1 inactiveLink">Visit Site</a>
-                            <a href="https://github.com/ysun62/Django-Blog/" target="_blank" class="btn btn1">See Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project2">
-                    <!-- <div class="box2"></div> -->
-                    <div class="card card2">
-                        <img src="./image/web2py_home.png" alt="" class="box2">
-                        <div class="card2_text">
-                            <h4>Web2py</h4>
-                            <h4>Vue.js</h4>
-                            <h4>HTML5</h4>
-                        </div>
-                    </div>
-                    <div class="text2">
-                        <div class="text">
-                            A full-stack online shopping website built with Web2py and Vue.js, which allows the user to:
-                            <ol>
-                                <li>(1) create/buy products</li>
-                                <li>(2) read/leave reviews and ratings</li>
-                            </ol>
+                        <div class="second-half second-project-text">
+                            <div class="project-text">
+                                A full-stack online shopping website built with Web2py and Vue.js, which allows the user to:
+                                <ol>
+                                    <li>(1) create/buy products</li>
+                                    <li>(2) read/leave reviews and ratings</li>
+                                </ol>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://ysun62.pythonanywhere.com/shopping_site/default/index" target="_blank" class="btn btn2">Visit Site</a>
+                                <a href="https://github.com/ysun62/Shopping-Website" target="_blank" class="btn btn2">See Code</a>
+                            </div>
                         </div>
                         <div class="button">
                             <a href="https://ysun62.pythonanywhere.com/shopping_site/default/index" target="_blank" class="btn btn2">Visit Site</a>
@@ -114,29 +118,31 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
 
         <!-- Contact Page -->
         <div id="contact">
-            <h2>Contact</h2>
-            <div class="contact-wrapper">
-                <div class="background bg1">
-                    <div class="contact-method github">
-                        <i class="fa fa-github"></i>
-                        <a href="https://github.com/ysun62" target="_blank">github.com/ysun62</a>
+            <div class="container" id="container3">
+                <h2>Contact</h2>
+                <div class="contact-wrapper">
+                    <div class="background bg1">
+                        <div class="contact-method github">
+                            <i class="fa fa-github"></i>
+                            <a href="https://github.com/ysun62" target="_blank">github.com/ysun62</a>
+                        </div>
                     </div>
-                </div>
-                <div class="background bg2">
-                    <div class="contact-method linkedin">
-                        <i class="fa fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/yanglsun/" target="_blank">linkedin.com/in/yanglsun/</a>
+                    <div class="background bg2">
+                        <div class="contact-method linkedin">
+                            <i class="fa fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/yanglsun/" target="_blank">linkedin.com/in/yanglsun/</a>
+                        </div>
                     </div>
-                </div>
-                <div class="background bg3">
-                    <div class="contact-method email">
-                        <i class="fa fa-envelope"></i>
-                        <a href="mailto:ysun62@ucsc.edu">ysun62@ucsc.edu</a>
+                    <div class="background bg3">
+                        <div class="contact-method email">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:ysun62@ucsc.edu">ysun62@ucsc.edu</a>
+                        </div>
                     </div>
                 </div>
             </div>
