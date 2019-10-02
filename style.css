@@ -400,7 +400,7 @@ ul li a:hover {
 
 /* About Page */
 #about {
-    height: 92vh;
+    height: 84vh;
     padding: 8vh 0;
     background-color: rgb(245, 245, 245);
     display: inline-block;
@@ -640,8 +640,8 @@ ul li a:hover {
 
 /* Contact Page */
 #contact {
-    height: 84vh;
-    padding: 8vh 0;
+    height: 92vh;
+    padding-top: 8vh;
     background: #f5f5f5;
 }
 
@@ -681,9 +681,6 @@ ul li a:hover {
     ul {
         top: 7vh;
     }
-    #about .container {
-        margin-bottom: 100px;
-    }
 }
 
 @media screen and (max-width: 375px) and (max-height: 750px) and (orientation: portrait) {
@@ -692,6 +689,16 @@ ul li a:hover {
     }
     ul li a {
         font-size: 14px;
+    }
+    #about {
+        padding: 9vh 0;
+    }
+    #projects {
+        padding: 9vh 0;
+    }
+    #contact {
+        height: 91vh;
+        padding-top: 9vh;
     }
     #about p {
         padding: 1.2em 3em;
