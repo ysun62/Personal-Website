@@ -403,7 +403,7 @@ ul li a:hover {
 
 /* About Page */
 #about {
-    height: 84vh;
+    max-height: 84vh;
     padding: 8vh 0;
     background-color: rgb(245, 245, 245);
     display: inline-block;
