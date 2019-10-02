@@ -55,7 +55,7 @@ const navAnimation = () => {
             if(item.style.animation) {
                 item.style.animation = '';
             } else {
-                item.style.animation = `navLinkFade 1s ease-out forwards ${index / 8}s`
+                item.style.animation = `navLinkFade 0.5s ease-out forwards ${index / 10}s`
             }
         });
 
