@@ -122,24 +122,27 @@
             <div class="container" id="container3">
                 <h2>Contact</h2>
                 <div class="contact-wrapper">
-                    <div class="background bg1">
-                        <div class="contact-method github">
+                    <h5>Have a question?<br>Feel free to send me a message!</h5>
+                    <form action="https://formspree.io/ysun9596@gmail.com" method="POST">
+                        <div class="input-field">
+                            <input type="text" name="Name" placeholder="Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="Email" placeholder="Email" required>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="message" name="Message" placeholder="Your Message" required minlength="10" maxlength="500"></textarea>
+                        </div>
+                        <input type="submit" class="submit-btn">
+                    </form>
+                    <footer>
+                        <h3>Let's Get Social!</h3>
+                        <div class="contact-method">
                             <i class="fa fa-github"></i>
-                            <a href="https://github.com/ysun62" target="_blank">github.com/ysun62</a>
-                        </div>
-                    </div>
-                    <div class="background bg2">
-                        <div class="contact-method linkedin">
                             <i class="fa fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/yanglsun/" target="_blank">linkedin.com/in/yanglsun/</a>
-                        </div>
-                    </div>
-                    <div class="background bg3">
-                        <div class="contact-method email">
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto:ysun62@ucsc.edu">ysun62@ucsc.edu</a>
                         </div>
-                    </div>
+                    </footer>
                 </div>
             </div>
         </div>
