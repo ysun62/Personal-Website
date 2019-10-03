@@ -305,12 +305,13 @@ ul {
     width: 100%;
     top: 6vh;
     /* display: none; */
-    -webkit-animation: navFade-portrait 0.5s forwards ease-out;
-            animation: navFade-portrait 0.5s forwards ease-out;
+    -webkit-animation: navFade-portrait 0.5s forwards ease-in-out;
+            animation: navFade-portrait 0.5s forwards ease-in-out;
 }
 
 ul li {
     margin: 1em;
+    opacity: 0;
 }
 
 ul li a {
@@ -673,7 +674,7 @@ h5 {
 }
 
 form {
-    margin: 10% auto 0 auto;
+    margin: 8% auto 0 auto;
     width: 100%;
 }
 
@@ -705,11 +706,10 @@ textarea {
     text-transform: uppercase;
     width: 130px;
     background: #51BE95;
-    border: 2px solid #f5f5f5;
     border: none;
     color: #f5f5f5;
     letter-spacing:1px;
-    text-shadow:0;
+    /* text-shadow:0; */
     font-size:12px;
     font-weight:bold;
     cursor: pointer;
@@ -742,7 +742,7 @@ footer h3 {
 }
 
 .contact-method i {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 20px;
     color: #f5f5f5;
 }
@@ -874,8 +874,8 @@ footer h3 {
     ul {
         /* position: relative; */
         top: 13vh;
-        -webkit-animation: navFade-landscape 0.5s forwards ease-out;
-                animation: navFade-landscape 0.5s forwards ease-out;
+        -webkit-animation: navFade-landscape 0.5s forwards ease-in-out;
+                animation: navFade-landscape 0.5s forwards ease-in-out;
     }
     ul li {
         margin: 0.8em;
