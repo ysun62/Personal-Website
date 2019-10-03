@@ -692,6 +692,9 @@ form {
     border: 1px solid #e0e0e0;
     padding: 10px;
     background: #f5f5f5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 textarea {
@@ -713,6 +716,9 @@ textarea {
     font-size:12px;
     font-weight:bold;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     /* transition: all 0.25s ease; */
 }
 
@@ -1058,6 +1064,7 @@ footer h3 {
     ul li {
         margin: 0;
         padding: 1em 0;
+        opacity: 1;
     }
     h5 {
         font-size: 18px;
