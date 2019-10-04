@@ -469,8 +469,12 @@ ul li a:hover {
 }
 
 .project1 {
-    margin: 3em 0 3em 0;
+    margin-top: 3em;
     text-align: center;
+}
+
+.project1, .project2 {
+    margin-bottom: 3em;
 }
 
 .first-half {
@@ -543,6 +547,10 @@ ul li a:hover {
 }
 
 .second-project-text {
+    background-color: #7a7a7a;
+}
+
+.third-project-text {
     background-color: #2E2E2E;
 }
 
@@ -589,18 +597,18 @@ ul li a:hover {
     background: #cccccc;
 } */
 
-.btn2 {
+.btn3 {
     background: #2E2E2E;
     border: 2px solid #f5f5f5;
 }
 
-/* .inactiveLink {
+.inactiveLink {
     pointer-events: none;
     cursor: default;
     border: 2px solid #cccccc;
     color: #f5f5f5;
     background: #cccccc;
-} */
+}
 
 .btn::before {
     content: "";
@@ -614,27 +622,27 @@ ul li a:hover {
     transition: 0.8s;
 }
 
-.btn1::before {
+.btn1::before, .btn2::before {
     top: 0;
     border-radius: 0 0 50% 50%;
     background: #f5f5f5;
 }
 
-.btn2::before {
+.btn3::before {
     bottom: 0;
     border-radius: 50% 50% 0 0;
     background: #f5f5f5;
 }
 
-.btn1:hover {
+.btn1:hover, .btn2:hover {
     color: #5B788A;
 }
 
-.btn2:hover {
+.btn3:hover {
     color: #2E2E2E;
 }
 
-.btn:hover::before {
+.btn:hover::before, .btn2:hover::before {
     height: 200%;
 }
 
@@ -645,6 +653,9 @@ ul li a:hover {
     opacity: 0.8;
 }
 .second-project-img:hover .ss2 {
+    opacity: 0.8;
+}
+.third-project-img:hover .ss3 {
     opacity: 0.8;
 }
 
@@ -930,15 +941,6 @@ footer h3 {
     }
 }
 
-/* @media screen and (min-width: 1000px) and (orientation: landscape) {
-    .header-button {
-        font-size: 40px;
-    }
-    ul {
-        
-    }
-} */
-
 /* ipad */
 @media screen and (min-width: 700px) and (orientation: portrait) {
     h1 {
@@ -976,7 +978,7 @@ footer h3 {
         margin: 0 auto;
         width: 95%;
     }
-    .project1 {
+    .project1, .project2 {
         margin-bottom: 4em;
     }
     .language-used h4 {
@@ -1015,7 +1017,7 @@ footer h3 {
     #about p {
         width: 80%;
     }
-    .project1 {
+    .project1, .project2 {
         margin-bottom: 5em;
     }
     .contact-method i {
