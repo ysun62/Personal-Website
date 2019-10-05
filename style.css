@@ -653,14 +653,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* .inactiveLink {
-    pointer-events: none;
-    cursor: default;
-    border: 2px solid #cccccc;
-    color: #f5f5f5;
-    background: #cccccc;
-} */
-
 .btn3 {
     background: #2E2E2E;
     border: 2px solid #f5f5f5;
@@ -698,8 +690,12 @@ nav ul li a:hover {
     background: #f5f5f5;
 }
 
-.btn1:hover, .btn2:hover {
+.btn1:hover {
     color: #5B788A;
+}
+
+.btn2:hover {
+    color: #7a7a7a;
 }
 
 .btn3:hover {
