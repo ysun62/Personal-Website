@@ -23,9 +23,9 @@ window.addEventListener('scroll', () => {
 
 //Handling Click
 const burger = document.querySelector('.burger');
-const ul = document.querySelector('ul');
-const ulItems = document.querySelectorAll('ul li');
-const navLinks = document.querySelectorAll('ul li a');
+const ul = document.querySelector('#nav-ul');
+const ulItems = document.querySelectorAll('#nav-ul li');
+const navLinks = document.querySelectorAll('#nav-ul li a');
 const handleClick = () => {
     ul.classList.add('hide-on-mobile');
     burger.classList.remove('toggleBurger');
