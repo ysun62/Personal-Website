@@ -289,7 +289,7 @@ nav {
             transform: rotate(45deg) translate(-5px, -6px);
 }
 
-ul {
+nav ul {
     background-color: rgb(58, 58, 58);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,12 +309,12 @@ ul {
             animation: navFade-portrait 0.5s forwards ease-in-out;
 }
 
-ul li {
+nav ul li {
     margin: 1em;
     opacity: 0;
 }
 
-ul li a {
+nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
@@ -325,7 +325,7 @@ ul li a {
     display: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     color: #51BE95;
 }
 
@@ -404,7 +404,7 @@ ul li a:hover {
 
 /* About Page */
 #about {
-    max-height: 84vh;
+    min-height: 84vh;
     padding: 8vh 0;
     background-color: rgb(245, 245, 245);
     display: inline-block;
@@ -430,18 +430,64 @@ ul li a:hover {
 #about img {
     margin-top: 3em;
     width: 60%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
 }
 
-#about p {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+.about-introduction {
+    text-align: center;
+}
+
+.about-text {
     padding: 1.2em 3em;
     margin-top: -1em;
     line-height: 2em;
+    display: inline-block;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    /* background: yellow; */
+    border-top: 5px dashed #7a7a7a;
+    width: 80%;
+}
+
+
+.skills p {
+    /* border-left: 5px solid #696969; */
+    /* border-bottom: 2px solid #7a7a7a; */
+    margin-top: 10px;
+    padding: 10px;
+    /* padding-top: 10px; */
+    color: #696969;
+    font-style: italic;
+    /* width: 100%; */
+    /* background: grey; */
+}
+
+.ul-container {
+    /* background: green; */
+    margin-top: 5%;
+    width: 50%;
+
+}
+
+.skills li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #696969;
+    /* color: rgb(138, 91, 124); */
+    /* color: rgb(179, 85, 150); */
+}
+
+.skills li.skill-title {
+    color: #5B788A;
+    /* color: rgb(138, 91, 124); */
+    /* color: rgb(179, 85, 150); */
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -779,21 +825,22 @@ footer h3 {
 
 
 
-/* iphone 6/7/8 */
+/* iphone 6/7/8 Plus */
 @media screen and (max-width: 415px) and (max-height: 750px) and (orientation: portrait) {
     nav {
         height: 7vh;
     }
-    ul {
+    nav ul {
         top: 7vh;
     }
 }
 
+/* iphone 6/7/8 */
 @media screen and (max-width: 375px) and (max-height: 750px) and (orientation: portrait) {
-    ul li {
+    nav ul li {
         margin: 0.5em;
     }
-    ul li a {
+    nav ul li a {
         font-size: 14px;
     }
     #about {
@@ -806,7 +853,7 @@ footer h3 {
         height: 91vh;
         padding-top: 9vh;
     }
-    #about p {
+    .about-text {
         padding: 1.2em 3em;
         line-height: 1.7em;
         font-size: 15px;
@@ -814,7 +861,7 @@ footer h3 {
     nav {
         height: 7.5vh;
     }
-    ul {
+    nav ul {
         top: 7.5vh;
     }
 }
@@ -833,7 +880,7 @@ footer h3 {
     nav {
         height: 8vh;
     }
-    ul {
+    nav ul {
         top: 8vh;
     }
     h2 {
@@ -842,9 +889,18 @@ footer h3 {
     h2::after {
         top: 40px;
     }
-    #about p {
+    .about-text {
         font-size: 13px;
         line-height: 1.7em;
+    }
+    .skills li {
+        font-size: 12px;
+    }
+    .skills li.skill-title {
+        font-size: 18px;
+    }
+    .skills p {
+        font-size: 13px;
     }
     textarea {
         height: 100px;
@@ -876,27 +932,47 @@ footer h3 {
                 flex-direction: row;
         margin-top: 6%;
         padding: 0 5% 0 6%;
+        flex-wrap: wrap;
+    }
+    .about-introduction {
+        text-align: center;
     }
     #about img {
         width: 30%;
         margin: 0;
     }
-    #about p {
+    .about-text {
         margin: 0;
         padding: 0 3%;
         font-size: 12px;
         line-height: 1.7em;
+        width: 70%;
+        display: inline-block;
     }
+    .ul-container {
+        width: 33%;
+    }
+    .skills li {
+        font-size: 11px;
+    }
+    .skills li.skill-title {
+        font-size: 15px;
+    }
+    .skills p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
     nav {
         height: 13vh;
     }
-    ul {
+    nav ul {
         /* position: relative; */
         top: 13vh;
         -webkit-animation: navFade-landscape 0.5s forwards ease-in-out;
                 animation: navFade-landscape 0.5s forwards ease-in-out;
     }
-    ul li {
+    nav ul li {
         margin: 0.8em;
     }
     .burger {
@@ -927,13 +1003,22 @@ footer h3 {
     nav {
         height: 12.5vh;
     }
-    ul {
+    nav ul {
         top: 12.5vh;
     }
     .burger {
         width: 5%;
     }
-    #about p {
+    .about-text {
+        font-size: 15px;
+    }
+    .skills li {
+        font-size: 13px;
+    }
+    .skills li.skill-title {
+        font-size: 17px;
+    }
+    .skills p {
         font-size: 15px;
     }
     .input-field input, textarea {
@@ -958,7 +1043,7 @@ footer h3 {
     nav {
         height: 5vh;
     }
-    ul {
+    nav ul {
         top: 5vh;
     }
     .burger {
@@ -966,14 +1051,29 @@ footer h3 {
     }
     #about img {
         width: 40%;
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1;
     }
-    #about p {
+    .about-text {
         font-size: 20px;
         line-height: 1.7em;
     }
+    .skills {
+        width: 90%;
+        /* flex-wrap: nowrap; */
+    }
+    .ul-container {
+        width: 33%;
+    }
+    .skills p {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .skills li {
+        font-size: 16px;
+    }
+    .skills li.skill-title {
+        font-size: 22px;
+    }
+    
     #projects .content {
         margin: 0 auto;
         width: 95%;
@@ -1014,7 +1114,7 @@ footer h3 {
     h2::after {
         top: 50px;
     }
-    #about p {
+    .about-text {
         width: 80%;
     }
     .project1, .project2 {
@@ -1038,7 +1138,7 @@ footer h3 {
     nav {
         height: 6vh;
     }
-    ul {
+    nav ul {
         position: relative;
         top: 0;
         background: none;
@@ -1059,7 +1159,7 @@ footer h3 {
         -webkit-animation: none;
                 animation: none;
     }
-    ul li {
+    nav ul li {
         margin: 0;
         padding: 1em 0;
         opacity: 1;
@@ -1074,6 +1174,18 @@ footer h3 {
     .input-field input, textarea {
         width: 40%;
     }
+    .ul-container {
+        width: 50%;
+    }
+    .container3 {
+        margin-top: -60px;
+    }
+    .skills {
+        margin-top: 70px;
+    }
+    .skills p {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 900px) and (orientation: landscape) {
@@ -1083,6 +1195,9 @@ footer h3 {
     #about .content {
         margin: 0 auto;
         width: 83%;
+    }
+    #about img {
+        width: 25%;
     }
     h1 {
         font-size: 3em;
@@ -1096,9 +1211,32 @@ footer h3 {
     h2 {
         margin-bottom: 1em;
     }
-    #about p {
+    .about-introduction {
+        /* display: flex; */
+        align-items: center;
+    }
+    .about-text {
         font-size: 19px;
-        text-align: left;
+        text-align: center;
+        width: 70%;
+    }
+    .ul-container {
+        width: 30%;
+    }
+    .container3 {
+        margin-top: 5%;
+    }
+    .skills {
+        margin-top: 25px;
+    }
+    .skills p {
+        font-size: 19px;
+    }
+    .skills li {
+        font-size: 17px;
+    }
+    .skills li.skill-title {
+        font-size: 21px;
     }
     .project-text {
         font-size: 18px;
@@ -1146,7 +1284,7 @@ footer h3 {
     nav {
         height: 6vh;
     }
-    ul {
+    nav ul {
         width: 40%;
         margin-left: 10%;
     }
@@ -1154,8 +1292,20 @@ footer h3 {
         margin: 0 auto;
         width: 75%;
     }
-    #about p {
+    .about-text {
         font-size: 24px;
+    }
+    .ul-container {
+        margin-top: 30px;
+    }
+    .skills p {
+        font-size: 24px;
+    }
+    .skills li {
+        font-size: 22px;
+    }
+    .skills li.skill-title {
+        font-size: 26px;
     }
     #projects .content {
         margin: 0 auto;
@@ -1204,7 +1354,7 @@ footer h3 {
     .project-button {
         margin: 40px 0 0 0;
     }
-    ul {
+    nav ul {
         width: 35%;
     }
 }
