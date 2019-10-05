@@ -305,8 +305,8 @@ nav ul {
     width: 100%;
     top: 6vh;
     /* display: none; */
-    -webkit-animation: navFade-portrait 0.5s forwards ease-in-out;
-            animation: navFade-portrait 0.5s forwards ease-in-out;
+    /* -webkit-animation: navFade-portrait 0.5s forwards ease-in-out;
+            animation: navFade-portrait 0.5s forwards ease-in-out; */
 }
 
 nav ul li {
@@ -344,6 +344,15 @@ nav ul li a:hover {
     }
     to {
         height: 35vh;
+    }
+}
+
+@keyframes navFadeAway-portrait {
+    from {
+        height: 35vh;
+    }
+    to {
+        height: 0;
     }
 }
 
@@ -398,6 +407,15 @@ nav ul li a:hover {
                 -o-transition: transform 1s ease-out;
                 transition: transform 1s ease-out;
                 transition: transform 1s ease-out, -webkit-transform 1s ease-out
+    }
+}
+
+@keyframes navLinkFadeOpposite {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 0;
     }
 }
 

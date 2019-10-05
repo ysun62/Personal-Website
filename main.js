@@ -21,48 +21,56 @@ window.addEventListener('scroll', () => {
     pageHighlight();
 });
 
-//Handling Click
+// Handling Click
 const burger = document.querySelector('.burger');
 const ul = document.querySelector('#nav-ul');
 const ulItems = document.querySelectorAll('#nav-ul li');
 const navLinks = document.querySelectorAll('#nav-ul li a');
 const handleClick = () => {
-    ul.classList.add('hide-on-mobile');
+    // Remove Burger Animation
     burger.classList.remove('toggleBurger');
+
+    // Change Border-Bottom
     nav.style.borderBottom = '3px solid #51BE95';
     ul.style.borderBottom = 'none';
-    ulItems.forEach((item) => {
-        item.style.animation = '';
+
+    // Nav Closing Animation
+    ul.style.animation = 'navFadeAway-portrait 0.5s forwards ease-in-out';
+
+    // Makes Sure Nav Animation Ends First
+    setTimeout(() => {
+        ul.classList.add('hide-on-mobile');
+    }, 500);
+
+    // NavLink Fade Away Animation
+    ulItems.forEach(item => {
+        item.style.animation = `navLinkFadeOpposite 0.5s ease-in-out backwards`
     });
 }
-
-
 
 // Nav Animation
 const navAnimation = () => {
     burger.addEventListener('click', () => {
-        //Toggle Nav
-        ul.classList.toggle('hide-on-mobile');
-        
-        if(nav.style.borderBottom === 'none') {
-            ul.style.borderBottom = 'none';
-            nav.style.borderBottom = '3px solid #51BE95';
-        } else {
+        if(ul.classList.contains('hide-on-mobile')) {
+            // Show Nav
+            ul.classList.remove('hide-on-mobile');
+
+            ul.style.animation = 'navFade-portrait 0.5s forwards ease-in-out';
+            
+            // Change Border-Bottom
             nav.style.borderBottom = 'none';
             ul.style.borderBottom = '3px solid #51BE95';
-        }
 
-        //Animate NavItems
-        ulItems.forEach((item, index) => {
-            if(item.style.animation) {
-                item.style.animation = '';
-            } else {
+            // Animate NavItems
+            ulItems.forEach((item, index) => {
                 item.style.animation = `navLinkFade 0.5s ease-in-out forwards ${index / 10}s`
-            }
-        });
+            });
 
-        //Animate Burger
-        burger.classList.toggle('toggleBurger');
+            // Animate Burger
+            burger.classList.add('toggleBurger');
+        } else {
+            handleClick();
+        }
 
         // Close Nav After Click Link
         navLinks.forEach(link => {
