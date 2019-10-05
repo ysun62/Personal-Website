@@ -36,6 +36,8 @@ const handleClick = () => {
     });
 }
 
+
+
 // Nav Animation
 const navAnimation = () => {
     burger.addEventListener('click', () => {
@@ -49,7 +51,7 @@ const navAnimation = () => {
             nav.style.borderBottom = 'none';
             ul.style.borderBottom = '3px solid #51BE95';
         }
-        
+
         //Animate NavItems
         ulItems.forEach((item, index) => {
             if(item.style.animation) {
@@ -62,7 +64,7 @@ const navAnimation = () => {
         //Animate Burger
         burger.classList.toggle('toggleBurger');
 
-        // Toggle Nav After Click
+        // Close Nav After Click Link
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 handleClick();
