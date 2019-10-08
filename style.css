@@ -106,6 +106,12 @@ h2 {
     margin-bottom: 80px;
 }
 
+.home-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-contact a {
     text-decoration: none;
     color: #696969;
@@ -113,8 +119,16 @@ h2 {
 
 .home-contact i {
     font-size: 32px;
-    margin: 10px;
+    margin: 11px;
     animation-delay: 1.2s;
+}
+
+.home-contact i.resume {
+    font-size: 30px;
+}
+
+.home-contact i:hover {
+    color: #f5f5f5;
 }
 
 h1 {
@@ -857,10 +871,13 @@ footer h3 {
 .contact-method i {
     font-size: 2em;
     margin: 0 20px;
-    color: #f5f5f5;
+    color: #696969;
     /* background:yellow; */
 }
 
+.contact-method i:hover {
+    color: #f5f5f5;
+}
 
 
 
