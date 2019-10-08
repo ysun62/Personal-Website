@@ -14,6 +14,7 @@ h2 {
     font-size: 2.2em;
     position: relative;
     display: inline-block;
+    color: rgb(27, 36, 47);
 }
 
 h2::after {
@@ -22,7 +23,7 @@ h2::after {
     left: 25%;
     width: 50%;
     height: 3px;
-    background: black;
+    background: rgb(27, 36, 47);
     display: block;
     position: absolute;
 }
@@ -769,14 +770,6 @@ nav ul li a:hover {
     position: relative;
 }
 
-#contact h2 {
-    color: rgb(27, 36, 47);
-}
-
-#contact h2::after {
-    background: rgb(27, 36, 47);
-}
-
 .contact-wrapper {
     text-align: center;
 }
@@ -871,8 +864,7 @@ footer h3 {
 .contact-method i {
     font-size: 2em;
     margin: 0 20px;
-    color: #696969;
-    /* background:yellow; */
+    color: #2E2E2E;
 }
 
 .contact-method i:hover {
