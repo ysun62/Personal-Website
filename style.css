@@ -371,24 +371,6 @@ nav ul li a:hover {
     }
 }
 
-@-webkit-keyframes navFade-landscape {
-    from {
-        height: 0;
-    }
-    to {
-        height: 70vh;
-    }
-}
-
-@keyframes navFade-landscape {
-    from {
-        height: 0;
-    }
-    to {
-        height: 70vh;
-    }
-}
-
 @-webkit-keyframes navLinkFade {
     from {
         opacity: 0;
@@ -1012,21 +994,46 @@ footer h3 {
         margin-top: 10px;
     }
 
+
     nav {
-        height: 13vh;
+        height: 12vh;
+    }
+    .hide-on-desktop {
+        display: none;
+    }
+    .hide-on-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
     }
     nav ul {
-        /* position: relative; */
-        top: 13vh;
-        -webkit-animation: navFade-landscape 0.5s forwards ease-in-out;
-                animation: navFade-landscape 0.5s forwards ease-in-out;
+        position: relative;
+        height: 100%;
+        top: 0;
+        background: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 80%;
+        margin-left: 20px;
+        -webkit-animation: none;
+                animation: none;
     }
     nav ul li {
-        margin: 0.8em;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 12px;
+        opacity: 1;
     }
-    .burger {
-        width: 7%;
-    }
+
+
     #projects .content {
         margin: 0 auto;
         width: 90%;
@@ -1049,12 +1056,6 @@ footer h3 {
 }
 
 @media screen and (min-width: 736px) and (orientation: landscape) {
-    nav {
-        height: 12.5vh;
-    }
-    nav ul {
-        top: 12.5vh;
-    }
     .burger {
         width: 5%;
     }
@@ -1209,9 +1210,8 @@ footer h3 {
                 animation: none;
     }
     nav ul li {
-        margin: 0;
-        padding: 1em 0;
         opacity: 1;
+        font-size: 1em;
     }
     h5 {
         font-size: 17px;
@@ -1322,7 +1322,7 @@ footer h3 {
 
 @media screen and (min-width: 1024px) and (orientation: portrait) {
     nav {
-        height: 4vh;
+        height: 4.5vh;
     }
 }
 
