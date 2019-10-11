@@ -941,9 +941,9 @@ footer h3 {
     }
 }
 
-@media screen and (min-width: 568px) and (orientation: landscape) {
+@media screen and (min-width: 500px) and (orientation: landscape) {
     .home-wrapper {
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
     .header-button {
         font-size: 30px;
