@@ -1029,7 +1029,7 @@ footer h3 {
         display: flex;
         align-items: center;
         height: 100%;
-        font-size: 12px;
+        font-size: 13px;
         opacity: 1;
     }
 
@@ -1056,8 +1056,8 @@ footer h3 {
 }
 
 @media screen and (min-width: 736px) and (orientation: landscape) {
-    .burger {
-        width: 5%;
+    nav ul {
+        margin-left: 6%;
     }
     .about-text {
         font-size: 15px;
