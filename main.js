@@ -4,20 +4,20 @@ const scroll = new SmoothScroll('a[href*="#"]', {speed: 500});
 
 // Sticky Nav
 const nav = document.querySelector('nav');
-const navTop = nav.offsetTop;
+// const navTop = nav.offsetTop;
 
-const handleScroll = () => {
-    if(window.scrollY >= navTop) {
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
-        nav.classList.add('fixed-nav');
-    } else {
-        document.body.style.paddingTop = 0;
-        nav.classList.remove('fixed-nav');
-    }
-}
+// const handleScroll = () => {
+//     if(window.scrollY >= navTop) {
+//         document.body.style.paddingTop = nav.offsetHeight + 'px';
+//         nav.classList.add('fixed-nav');
+//     } else {
+//         document.body.style.paddingTop = 0;
+//         nav.classList.remove('fixed-nav');
+//     }
+// }
 
 window.addEventListener('scroll', () => {
-    handleScroll();
+    // handleScroll();
     pageHighlight();
 });
 
