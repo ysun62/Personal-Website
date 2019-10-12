@@ -119,13 +119,13 @@ h2 {
 }
 
 .home-contact i {
-    font-size: 32px;
+    font-size: 25px;
     margin: 11px;
     animation-delay: 1.2s;
 }
 
 .home-contact i.resume {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .home-contact i:hover {
@@ -134,7 +134,7 @@ h2 {
 
 h1 {
     color: #696969;
-    font-size: 2.3em;
+    font-size: 35px;
 }
 
 .name {
@@ -149,7 +149,7 @@ h1 {
 .header-subtitle {
     margin-top: 5px;
     color: #696969;
-    font-size: 1.3em;
+    font-size: 20px;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
 }
@@ -157,7 +157,7 @@ h1 {
 .header-button {
     position: absolute;
     bottom: 0;
-    font-size: 40px;
+    font-size: 30px;
     color: #51BE95;
     margin-bottom: 80px;
     cursor: pointer;
@@ -337,8 +337,8 @@ nav ul li {
 nav ul li a {
     text-transform: uppercase;
     font-weight: bold;
-    /* letter-spacing: 1px; */
-    color: rgb(245, 245, 245);
+    letter-spacing: 1px;
+    /* color: rgb(245, 245, 245); */
     color: #696969;
 }
 
@@ -906,13 +906,19 @@ footer h3 {
 /* iphone 5/SE */
 @media screen and (max-width: 350px) and (orientation: portrait) {
     h1 {
-        font-size: 2em;
+        font-size: 33px;
     }
     .header-subtitle {
-        font-size: 1em;
+        font-size: 18px;
     }
     .header-button {
-        font-size: 35px;
+        font-size: 28px;
+    }
+    .home-contact i {
+        font-size: 23px;
+    }
+    .home-contact i.resume {
+        font-size: 20px;
     }
     nav {
         height: 8vh;
@@ -1095,10 +1101,16 @@ footer h3 {
         font-size: 3em;
     }
     .header-subtitle {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
     .header-button {
         font-size: 45px;
+    }
+    .home-contact i {
+        font-size: 33px;
+    }
+    .home-contact i.resume {
+        font-size: 31px;
     }
     h2 {
         margin-bottom: 1em;
@@ -1226,6 +1238,9 @@ footer h3 {
         opacity: 1;
         font-size: 1em;
     }
+    nav ul li a {
+        color: #f5f5f5;
+    }
     h5 {
         font-size: 17px;
         width: 30%;
@@ -1271,6 +1286,12 @@ footer h3 {
     }
     .header-button {
         font-size: 45px;
+    }
+    .home-contact i {
+        font-size: 33px;
+    }
+    .home-contact i.resume {
+        font-size: 31px;
     }
     h2 {
         margin-bottom: 1em;
@@ -1341,12 +1362,16 @@ footer h3 {
 
 @media screen and (min-width: 1300px) {
     .header-button {
-        font-size: 45px;
+        font-size: 40px;
     }
     .header-button:hover i {
-        transform: scale(1.5);
+        transform: scale(1.3);
         transition: transform 0.5s ease-in-out;
-    }
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+}
     nav {
         height: 6vh;
     }
@@ -1389,7 +1414,10 @@ footer h3 {
             -ms-flex-align: initial;
                 align-items: initial;
         width: 100%;
-        margin: 100px auto;
+        margin: 80px auto;
+    }
+    .project4 {
+        margin-top: 50px;
     }
     .fourth-project-img {
         border-bottom: 1px solid black;
