@@ -1358,20 +1358,26 @@ footer h3 {
     h1 {
         font-size: 2.5em;
     }
+    h2 {
+        font-size: 2.3em;
+    }
     .header-subtitle {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     .header-button {
         font-size: 30px;
     }
     .home-contact i {
-        font-size: 23px;
+        font-size: 27px;
     }
     .home-contact i.resume {
-        font-size: 21px;
+        font-size: 25px;
+    }
+    nav ul li a {
+        font-size: 15px;
     }
     nav {
-        height: 10vh;
+        height: 8vh;
     }
     #contact {
         height: 100vh;
