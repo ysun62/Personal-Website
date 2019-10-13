@@ -1354,6 +1354,30 @@ footer h3 {
     }
 }
 
+@media screen and (min-width: 900px) and (orientation: landscape) and (max-height: 700px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .header-subtitle {
+        font-size: 1.2em;
+    }
+    .header-button {
+        font-size: 30px;
+    }
+    .home-contact i {
+        font-size: 23px;
+    }
+    .home-contact i.resume {
+        font-size: 21px;
+    }
+    nav {
+        height: 10vh;
+    }
+    #contact {
+        height: 100vh;
+    }
+}
+
 @media screen and (min-width: 1024px) and (orientation: portrait) {
     nav {
         height: 4.5vh;
