@@ -1075,9 +1075,6 @@ footer h3 {
 }
 
 @media screen and (min-width: 736px) and (orientation: landscape) {
-    nav ul {
-        /* margin-left: 6%; */
-    }
     .about-text {
         font-size: 15px;
     }
