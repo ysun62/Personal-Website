@@ -1,8 +1,8 @@
 // Smooth Scroll
 const scroll = new SmoothScroll('a[href*="#"]', { speed: 500 });
 
-// Sticky Nav
 const nav = document.querySelector("nav");
+// Sticky Nav
 // const navTop = nav.offsetTop;
 
 // const handleScroll = () => {
