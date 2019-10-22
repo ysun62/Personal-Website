@@ -40,6 +40,10 @@ a {
   text-align: center;
 }
 
+.body-container {
+  background: transparent;
+}
+
 .content {
   text-align: center;
 }
@@ -273,12 +277,11 @@ nav {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: rgb(27, 36, 47);
-  /* background: black; */
   top: 0;
   width: 100%;
   border-bottom: 3px solid #51be95;
-  z-index: 1;
   position: fixed;
+  z-index: 200;
 }
 
 .current-page {
@@ -322,7 +325,6 @@ nav {
 }
 
 nav ul {
-  background-color: rgba(58, 58, 58, 0.9);
   background: rgb(250, 250, 250);
   display: -webkit-box;
   display: -ms-flexbox;

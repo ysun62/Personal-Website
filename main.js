@@ -83,6 +83,10 @@ const navAnimation = () => {
 
 navAnimation();
 
+document.querySelector(".body-container").addEventListener("click", () => {
+  handleClick();
+});
+
 const pageHighlight = () => {
   let scrollPos = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -102,10 +106,14 @@ const pageHighlight = () => {
   }
 };
 
-window.onload = () => {
+clearCurrentPage = () => {
   for (let i = 0; i < navLinks.length - 1; i++) {
     navLinks[i].classList.remove("current-page");
   }
+};
+
+window.onload = async () => {
+  await clearCurrentPage();
   if (window.location.href.indexOf("projects") != -1) {
     navLinks[1].classList.add("current-page");
   } else if (window.location.href.indexOf("about") != -1) {
