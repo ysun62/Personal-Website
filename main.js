@@ -103,6 +103,9 @@ const pageHighlight = () => {
 };
 
 window.onload = () => {
+  for (let i = 0; i < navLinks.length - 1; i++) {
+    navLinks[i].classList.remove("current-page");
+  }
   if (window.location.href.indexOf("projects") != -1) {
     navLinks[1].classList.add("current-page");
   } else if (window.location.href.indexOf("about") != -1) {
