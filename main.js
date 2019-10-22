@@ -101,3 +101,15 @@ const pageHighlight = () => {
     }
   }
 };
+
+window.onload = () => {
+  if (window.location.href.indexOf("projects") != -1) {
+    navLinks[1].classList.add("current-page");
+  } else if (window.location.href.indexOf("about") != -1) {
+    navLinks[2].classList.add("current-page");
+  } else if (window.location.href.indexOf("contact") != -1) {
+    navLinks[3].classList.add("current-page");
+  } else {
+    navLinks[0].classList.add("current-page");
+  }
+};
