@@ -15,8 +15,19 @@ const nav = document.querySelector("nav");
 //     }
 // }
 
+const navActivate = () => {
+  if (window.pageYOffset > 20) {
+    nav.classList.add("active-nav");
+    ul.classList.add("active-nav");
+  } else {
+    nav.classList.remove("active-nav");
+    ul.classList.remove("active-nav");
+  }
+};
+
 window.addEventListener("scroll", () => {
   // handleScroll();
+  navActivate();
   pageHighlight();
 });
 
@@ -28,10 +39,6 @@ const navLinks = document.querySelectorAll("#nav-ul li a");
 const handleClick = () => {
   // Remove Burger Animation
   burger.classList.remove("toggleBurger");
-
-  // Change Border-Bottom
-  nav.style.borderBottom = "3px solid #51BE95";
-  ul.style.borderBottom = "none";
 
   // Nav Closing Animation
   ul.style.animation = "navFadeAway-portrait 0.5s forwards ease-in-out";
@@ -55,10 +62,6 @@ const navAnimation = () => {
       ul.classList.remove("hide-on-mobile");
 
       ul.style.animation = "navFade-portrait 0.5s forwards ease-in-out";
-
-      // Change Border-Bottom
-      nav.style.borderBottom = "none";
-      ul.style.borderBottom = "3px solid #51BE95";
 
       // Animate NavItems
       ulItems.forEach((item, index) => {

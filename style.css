@@ -277,11 +277,20 @@ nav {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: rgb(27, 36, 47);
+  background: rgba(255, 255, 255, 0.5);
+  /* background: white; */
   top: 0;
   width: 100%;
-  border-bottom: 3px solid #51be95;
+  /* border-bottom: 3px solid #51be95; */
   position: fixed;
   z-index: 200;
+}
+
+.active-nav {
+  background: white;
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+  box-shadow: 0 4px 6px -6px black;
 }
 
 .current-page {
@@ -303,7 +312,7 @@ nav {
   height: 3px;
   width: 27px;
   background-color: rgb(226, 226, 226);
-  background: white;
+  background: #696969;
   margin: 5px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -326,6 +335,7 @@ nav {
 
 nav ul {
   background: rgb(250, 250, 250);
+  background: rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +349,7 @@ nav ul {
   position: absolute;
   width: 100%;
   top: 6vh;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
   /* text-align: left; */
 
   /* -webkit-animation: navFade-portrait 0.5s forwards ease-in-out;
@@ -356,7 +367,7 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 1px;
   /* color: rgb(245, 245, 245); */
-  color: #696969;
+  color: #888888;
 }
 
 .hide-on-mobile {
@@ -1226,6 +1237,8 @@ footer h3 {
   }
   nav {
     height: 6vh;
+    display: flex;
+    align-items: flex-end;
   }
   nav ul {
     position: relative;
@@ -1245,7 +1258,7 @@ footer h3 {
     flex-direction: row;
     width: 600px;
 
-    margin-left: 50px;
+    margin-right: 50px;
     -webkit-animation: none;
     animation: none;
   }
@@ -1255,6 +1268,8 @@ footer h3 {
   }
   nav ul li a {
     color: #f5f5f5;
+    /* color: #696969; */
+    color: #888888;
   }
   h5 {
     font-size: 17px;
@@ -1424,7 +1439,6 @@ footer h3 {
   }
   nav ul {
     width: 650px;
-    margin-left: 10%;
   }
   #about .content {
     margin: 0 auto;
