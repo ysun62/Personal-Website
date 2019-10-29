@@ -65,6 +65,10 @@ const navAnimation = () => {
 
       ul.style.animation = "navFade-portrait 0.5s forwards ease-in-out";
 
+      if (nav.classList.contains("active-nav")) {
+        ul.classList.add("active-nav");
+      }
+
       // Animate NavItems
       ulItems.forEach((item, index) => {
         item.style.animation = `navLinkFade 0.5s ease-in-out forwards ${index /
@@ -127,5 +131,9 @@ window.onload = async () => {
     navLinks[3].classList.add("current-page");
   } else {
     navLinks[0].classList.add("current-page");
+  }
+
+  if (window.pageYOffset > 20) {
+    nav.classList.add("active-nav");
   }
 };
