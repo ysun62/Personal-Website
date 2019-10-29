@@ -288,9 +288,9 @@ nav {
 
 .active-nav {
   background: white;
-  -webkit-box-shadow: 0 4px 6px -6px black;
-  -moz-box-shadow: 0 4px 6px -6px black;
-  box-shadow: 0 4px 6px -6px black;
+  -webkit-box-shadow: 0 4px 7px -8px black;
+  -moz-box-shadow: 0 4px 7px -8px black;
+  box-shadow: 0 4px 7px -8px black;
 }
 
 .current-page {
