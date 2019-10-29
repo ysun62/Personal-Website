@@ -18,7 +18,9 @@ const nav = document.querySelector("nav");
 const navActivate = () => {
   if (window.pageYOffset > 20) {
     nav.classList.add("active-nav");
-    ul.classList.add("active-nav");
+    if (burger.classList.contains("toggleBurger")) {
+      ul.classList.add("active-nav");
+    }
   } else {
     nav.classList.remove("active-nav");
     ul.classList.remove("active-nav");
