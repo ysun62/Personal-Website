@@ -15,6 +15,24 @@ const nav = document.querySelector("nav");
 //     }
 // }
 
+// VANTA.NET({
+//   el: "#background",
+//   mouseControls: true,
+//   touchControls: true,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   scale: 1.0,
+//   scaleMobile: 1.0,
+//   color: "#cfe0e7",
+//   backgroundColor: "#181434",
+//   maxDistance: 21.0,
+//   spacing: 18.0
+// });
+
+particlesJS.load("particles-js", "particlesjs-config.json", function() {
+  console.log("callback - particles.js config loaded");
+});
+
 const navActivate = () => {
   if (window.pageYOffset > 20) {
     nav.classList.add("active-nav");
