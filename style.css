@@ -290,12 +290,19 @@ nav {
   justify-content: center;
   background-color: rgb(27, 36, 47);
   background: rgba(255, 255, 255, 0.2);
-  /* background: white; */
+  /*background: white;
+  */
   top: 0;
   width: 100%;
-  /* border-bottom: 3px solid #51be95; */
+  /*border-bottom: 3px solid #51be95;
+  */
   position: fixed;
   z-index: 200;
+  /* transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -o-transition: background 0.5s; */
 }
 
 .active-nav {
@@ -303,6 +310,11 @@ nav {
   -webkit-box-shadow: 0 4px 7px -8px black;
   -moz-box-shadow: 0 4px 7px -8px black;
   box-shadow: 0 4px 7px -8px black;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -ms-transition: background 0.5s;
+  -o-transition: background 0.5s;
 }
 
 .current-page {
